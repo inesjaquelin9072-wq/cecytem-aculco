@@ -1,0 +1,762 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="CECYTEM Plantel Aculco - Colegio de Estudios Científicos y Tecnológicos del Estado de México" />
+  <meta name="author" content="CECYTEM Aculco" />
+  <title>CECYTEM Plantel Aculco | Educación de Calidad</title>
+
+  <link rel="icon" href="/img/logo-cecytem.png">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+  <!-- Bootstrap 5 CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <!-- Bootstrap Icons -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" />
+  <!-- CSS personalizado -->
+  <link rel="stylesheet" href="/src/styles/main.css" />
+</head>
+<body data-bs-spy="scroll" data-bs-target="#navbarMain" data-bs-offset="100" tabindex="0">
+  
+  <div id="loader">
+    <img src="/img/logo-cecytem.png" alt="Logo">
+    <h3>CECYTEM Aculco</h3>
+    <div class="spinner-border text-light mt-3"></div>
+  </div>
+
+  <!-- ============ BARRA DE NAVEGACIÓN ============ -->
+  <div id="navbar"></div>
+
+  <!-- ============ INICIO / HERO ============ -->
+  <section id="inicio" class="hero-section d-flex align-items-center text-white">
+    <div class="container text-center">
+      <h1 class="display-3 fw-bold">CECYTEM Plantel Aculco</h1>
+      <p class="lead mt-3">Formando profesionales con valores en el corazón del Estado de México</p>
+      
+      <!-- Botones centrados -->
+      <div class="mt-4 d-flex justify-content-center align-items-center gap-3 flex-wrap">
+        <a href="#servicios" class="btn btn-light btn-lg">
+          <i class="bi bi-mortarboard"></i> Oferta Educativa
+        </a>
+        <a href="#contacto" class="btn btn-outline-light btn-lg">
+          <i class="bi bi-envelope"></i> Contáctanos
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ SOBRE NOSOTROS ============ -->
+  <section id="nosotros" class="py-5">
+    <div class="container">
+      <h2 class="text-center mb-5 section-title">Sobre Nosotros</h2>
+      <div class="row align-items-center">
+        <div class="col-md-6">
+          <img src="/img/galeria-1.jpg" alt="Plantel CECYTEM Aculco" class="img-fluid rounded shadow" />
+        </div>
+        <div class="col-md-6">
+          <h3 class="text-primary">Educación Media Superior de Calidad</h3>
+          <p class="mt-3">
+            El <strong>Colegio de Estudios Científicos y Tecnológicos del Estado de México (CECYTEM)</strong>
+            es una institución de educación media superior dependiente del Gobierno del Estado de México.
+            El Plantel Aculco, ubicado en el municipio de <em>Aculco de Espinoza</em>, ofrece la
+            modalidad de <strong>Preparatoria Dual</strong>, combinando formación académica con
+            capacitación técnica profesional.
+          </p>
+          <ul class="list-unstyled mt-3">
+            <li><i class="bi bi-check-circle-fill text-success"></i> Más de 250 alumnos activos</li>
+            <li><i class="bi bi-check-circle-fill text-success"></i> Docentes certificados</li>
+            <li><i class="bi bi-check-circle-fill text-success"></i> Instalaciones modernas</li>
+            <li><i class="bi bi-check-circle-fill text-success"></i> Convenios con empresas locales</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ Titular ============ -->
+  <section id="titular" class="container py-5">
+    <div class="container">
+      <h2 class="text-center mb-5 section-title">
+        <i class="fas fa-graduation-cap"></i> Titular
+      </h2>
+    </div>
+
+    <div class="row align-items-center">
+      <div class="col-lg-5 text-center">
+        <img src="img/director.jpg" class="img-fluid rounded shadow" alt="Director">
+      </div>
+      <div class="col-lg-7">
+        <h3 class="fw-bold mb-3">Lic. Joel Cruz Canseco</h3>
+        <p>
+          Me es grato dirigirme a ustedes, para externarles mi compromiso de
+          cumplir con lealtad, respeto, entrega y pasión, la responsabilidad 
+          que me ha otorgado nuestra Gobernadora Maestra Delfina Gómez Álvarez, 
+          como Director General del CECyTEM. Sé que cuento con personas como tú,
+          que, con trabajo, solidaridad y apoyo, muestran su voluntad de cumplir
+          con nuestra misión, visión y objetivos para impartir educación media superior
+          de calidad, en su modalidad de bachillerato tecnológico bivalente y con ello 
+          nuestros egresados cuenten con educación tecnológica terminal que les permita 
+          incorporarse a alguna actividad productiva y remunerable, o bien, continuar sus 
+          estudios de nivel superior y así respaldar la línea ejemplar de nuestra querida Gobernadora.
+          Te reitero mi agradecimiento y me pongo a tus órdenes.
+        </p>
+        <p>Septiembre de 2023.</p>
+      </div>
+    </div>
+  </section>
+    
+  <!-- ============ Misión, visión y objetivos ============ -->
+  <section id="mision" class="py-5 bg-light">
+    <div class="container">
+      <div class="text-center mb-5 section-title">
+        <h2 class="fw-bold">Misión, Visión y Objetivos</h2>
+        <div class="titulo-linea"></div>
+      </div>
+
+      <div class="row g-4">
+        <!-- MISIÓN -->
+        <div class="col-lg-4">
+          <div class="card mision-card h-100">
+            <div class="card-body text-center">
+              <i class="bi bi-bullseye icono-mision"></i>
+              <h3>Misión</h3>
+              <p>
+                Impartir educación media superior de calidad,
+                en la modalidad de bachillerato tecnológico
+                bivalente, formando jóvenes con conocimientos
+                científicos y tecnológicos que les permitan
+                incorporarse al sector productivo o continuar
+                estudios superiores.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <!-- VISIÓN -->
+        <div class="col-lg-4">
+          <div class="card mision-card h-100">
+            <div class="card-body text-center">
+              <i class="bi bi-eye icono-mision"></i>
+              <h3>Visión</h3>
+              <p>
+                Ser la mejor opción de educación media superior
+                tecnológica del Estado de México, reconocida por
+                la calidad académica, innovación y formación
+                integral de sus estudiantes.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <!-- OBJETIVOS -->
+        <div class="col-lg-4">
+          <div class="card mision-card h-100">
+            <div class="card-body text-center">
+              <i class="bi bi-rocket-takeoff icono-mision"></i>
+              <h3>Objetivos</h3>
+              <ul class="lista-objetivos">
+                <li>Impartir educación tecnológica de calidad.</li>
+                <li>Fortalecer el aprendizaje científico y tecnológico.</li>
+                <li>Promover la innovación y el pensamiento crítico.</li>
+                <li>Fomentar los valores y la responsabilidad social.</li>
+                <li>Vincular a los estudiantes con el sector productivo.</li>
+                <li>Mejorar continuamente la calidad educativa.</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ SERVICIOS / OFERTA EDUCATIVA ============ -->
+  <section id="servicios" class="py-5">
+    <div class="container">
+      <h2 class="text-center mb-5 section-title">Oferta Educativa</h2>
+      <p class="text-center text-muted mb-5">
+        Programas académicos con enfoque dual que combinan teoría y práctica
+      </p>
+      
+      <div class="row g-4 justify-content-center">
+        
+        <!-- TARJETA 1: Programación (SIN CARRUSEL) -->
+        <div class="col-lg-6 mb-4">
+          <div class="card carrera-card h-100">
+            <div class="card-body">
+              <h3 class="card-title">Técnico en Programación</h3>
+              <p class="card-text">
+                Desarrollo de software, bases de datos,
+                redes, aplicaciones web y soporte técnico.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <!-- TARJETA 2: Alimentos (SIN CARRUSEL) -->
+        <div class="col-lg-6 mb-4">
+          <div class="card carrera-card h-100">
+            <div class="card-body">
+              <h3 class="card-title">Técnico en Producción Industrial de Alimentos</h3>
+              <p class="card-text">
+                Elaboración de alimentos, innovación,
+                control de calidad y procesos industriales.
+              </p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- TABLA - Plan de estudios -->
+      <h3 class="text-center mt-5 mb-4">Plan de Estudios - 1er Semestre</h3>
+      <div class="table-responsive">
+        <table class="table table-striped table-hover table-bordered align-middle">
+          <thead class="table-primary">
+            <tr>
+              <th scope="col">Clave</th>
+              <th scope="col">Asignatura</th>
+              <th scope="col">Horas/Semana</th>
+              <th scope="col">Créditos</th>
+              <th scope="col">Tipo</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>ESP-101</td>
+              <td>Español I</td>
+              <td>5</td>
+              <td>8</td>
+              <td><span class="badge bg-info">Básica</span></td>
+            </tr>
+            <tr>
+              <td>MAT-101</td>
+              <td>Matemáticas I</td>
+              <td>6</td>
+              <td>10</td>
+              <td><span class="badge bg-info">Básica</span></td>
+            </tr>
+            <tr>
+              <td>ING-101</td>
+              <td>Inglés I</td>
+              <td>3</td>
+              <td>6</td>
+              <td><span class="badge bg-info">Básica</span></td>
+            </tr>
+            <tr>
+              <td>FIS-101</td>
+              <td>Física I</td>
+              <td>4</td>
+              <td>8</td>
+              <td><span class="badge bg-warning text-dark">Propedéutica</span></td>
+            </tr>
+            <tr>
+              <td>QUI-101</td>
+              <td>Química I</td>
+              <td>4</td>
+              <td>8</td>
+              <td><span class="badge bg-warning text-dark">Propedéutica</span></td>
+            </tr>
+            <tr>
+              <td>PRO-101</td>
+              <td>Módulo Profesional Dual</td>
+              <td>8</td>
+              <td>12</td>
+              <td><span class="badge bg-success">Profesional</span></td>
+            </tr>
+          </tbody>
+          <tfoot class="table-primary">
+            <tr>
+              <th colspan="2">Total</th>
+              <th>30</th>
+              <th>52</th>
+              <th>-</th>
+            </tr>
+          </tfoot>
+        </table>
+      </div>
+
+      <!-- PDF Educación Dual -->
+      <div class="row mt-5">
+        <div class="col-12">
+          <div class="card shadow border-0 dual-card">
+            <div class="card-body p-5">
+              <div class="row align-items-center">
+                <div class="col-md-2 text-center">
+                  <i class="bi bi-file-earmark-pdf-fill dual-icon"></i>
+                </div>
+                <div class="col-md-7">
+                  <h3 class="mb-3">Procesos y criterios para el Programa de Educación Dual</h3>
+                  <p class="text-muted mb-0">
+                    Consulta el documento oficial con los requisitos,
+                    proceso de selección, criterios de evaluación,
+                    responsabilidades y lineamientos del Programa de
+                    Educación Dual del CECYTEM.
+                  </p>
+                </div>
+                <div class="col-md-3 text-center mt-4 mt-md-0">
+                  <a href="/pdf/Programa_Educacion_Dual.pdf" target="_blank" class="btn btn-primary mb-2 w-100">
+                    <i class="bi bi-eye-fill"></i> Ver PDF
+                  </a>
+                  <a href="/pdf/Programa_Educacion_Dual.pdf" download class="btn btn-outline-cecytem w-100">
+                    <i class="bi bi-download"></i> Descargar PDF
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ ALIADOS ESTRATÉGICOS ============ -->
+  <section id="aliados" class="py-5 bg-light">
+    <div class="container">
+      <h2 class="text-center mb-5 section-title">Aliados Estratégicos</h2>
+      <p class="text-center text-muted mb-5">
+        Empresas e instituciones con las que colaboramos en la formación dual
+      </p>
+      <div class="row text-center g-4">
+        <div class="col-6 col-md-3">
+          <a href="https://www.gob.mx/sep" target="_blank" rel="noopener">
+            <div class="p-4 bg-white rounded shadow-sm h-100">
+              <i class="bi bi-bank display-4 text-primary"></i>
+              <p class="mt-2 mb-0 fw-bold">SEP</p>
+            </div>
+          </a>
+        </div>
+        <div class="col-6 col-md-3">
+          <a href="https://www.edomex.gob.mx" target="_blank" rel="noopener">
+            <div class="p-4 bg-white rounded shadow-sm h-100">
+              <i class="bi bi-building display-4 text-primary"></i>
+              <p class="mt-2 mb-0 fw-bold">Gob. Edo. Méx.</p>
+            </div>
+          </a>
+        </div>
+        <div class="col-6 col-md-3">
+          <a href="https://www.conocer.gob.mx" target="_blank" rel="noopener">
+            <div class="p-4 bg-white rounded shadow-sm h-100">
+              <i class="bi bi-award display-4 text-primary"></i>
+              <p class="mt-2 mb-0 fw-bold">CONOCER</p>
+            </div>
+          </a>
+        </div>
+        <div class="col-6 col-md-3">
+          <a href="https://www.aculco.gob.mx" target="_blank" rel="noopener">
+            <div class="p-4 bg-white rounded shadow-sm h-100">
+              <i class="bi bi-geo-alt display-4 text-primary"></i>
+              <p class="mt-2 mb-0 fw-bold">H. Ayunt. Aculco</p>
+            </div>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ GALERÍA ============ -->
+  <section id="galeria" class="py-5">
+    <div class="container">
+      <h2 class="text-center mb-5 section-title">Galería del Plantel</h2>
+      <div class="row g-3">
+        <div class="col-md-4 col-sm-6">
+          <img src="/img/instalaciones.jpg" class="img-fluid rounded gallery-img" alt="Instalaciones" />
+        </div>
+        <div class="col-md-4 col-sm-6">
+          <img src="/img/laboratorios.jpg" class="img-fluid rounded gallery-img" alt="Laboratorios" />
+        </div>
+        <div class="col-md-4 col-sm-6">
+          <img src="/img/eventos.jpg" class="img-fluid rounded gallery-img" alt="Eventos" />
+        </div>
+        <div class="col-md-4 col-sm-6">
+          <img src="/img/deportes.jpg" class="img-fluid rounded gallery-img" alt="Deportes" />
+        </div>
+        <div class="col-md-4 col-sm-6">
+          <img src="/img/cultura.jpg" class="img-fluid rounded gallery-img" alt="Cultura" />
+        </div>
+        <div class="col-md-4 col-sm-6">
+          <img src="/img/graduacion.jpg" class="img-fluid rounded gallery-img" alt="Graduación" />
+        </div>
+      </div>
+    </div>
+  </section>
+   
+  <!-- ================= MEDIO AMBIENTE ================= -->
+  <section id="basura" class="py-5 bg-light">
+    <div class="container">
+      <h2 class="section-title text-center mb-5">
+        <i class="fas fa-recycle text-success"></i> Cuidado del Medio Ambiente
+      </h2>
+      <p class="text-center text-muted mb-5">
+        En CECYTEM Aculco promovemos una cultura ambiental responsable.
+        Cada acción cuenta para mantener un municipio más limpio.
+      </p>
+
+      <div class="row g-4">
+        <div class="col-md-4">
+          <div class="card service-card shadow h-100">
+            <div class="card-body text-center">
+              <i class="fas fa-trash-alt fa-3x text-danger mb-3"></i>
+              <h4>Problemática</h4>
+              <p> La basura en calles y espacios públicos afecta el medio ambiente,
+                 la salud y la imagen de nuestro municipio.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card service-card shadow h-100">
+            <div class="card-body text-center">
+              <i class="fas fa-leaf fa-3x text-success mb-3"></i>
+              <h4>¿Cómo ayudar?</h4>
+              <p>
+                • Separar residuos.<br>
+                • Reciclar.<br>
+                • No tirar basura.<br>
+                • Participar en campañas de limpieza.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card service-card shadow h-100">
+            <div class="card-body text-center">
+              <i class="fas fa-seedling fa-3x text-primary mb-3"></i>
+              <h4>Compromiso</h4>
+              <p> Todos podemos contribuir a mantener limpio Aculco
+                 cuidando los espacios públicos y fomentando el reciclaje.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- CONTADORES -->
+      <div class="row text-center mt-5">
+        <div class="col-md-3">
+          <h2 class="counter text-success" data-target="500">0</h2>
+          <p>Árboles protegidos</p>
+        </div>
+        <div class="col-md-3">
+          <h2 class="counter text-primary" data-target="1200">0</h2>
+          <p>Kg reciclados</p>
+        </div>
+        <div class="col-md-3">
+          <h2 class="counter text-success" data-target="350">0</h2>
+          <p>Estudiantes participantes</p>
+        </div>
+        <div class="col-md-3">
+          <h2 class="counter text-primary" data-target="25">0</h2>
+          <p>Campañas ambientales</p>
+        </div>
+      </div>
+
+      <!-- BOTÓN -->
+      <div class="text-center mt-5">
+        <button id="btnEnviarCampania" class="btn btn-success px-5" type="button" data-bs-toggle="modal" data-bs-target="#modalCampania">
+          <i class="fas fa-hand-holding-heart me-2"></i> Registrarme
+        </button>
+      </div>
+    </div> 
+  </section>
+
+  <!-- ============ MULTIMEDIA ============ -->
+  <section class="py-5">
+    <div class="container">
+      <h3 class="text-center mt-5 mb-4">Conoce nuestro plantel</h3>
+      <div class="text-center my-4">
+        <video controls class="w-100 rounded shadow" style="max-width: 800px;">
+          <source src="videos/presentacion.mp4" type="video/mp4">
+          Tu navegador no soporta videos.
+        </video>
+      </div>
+
+      <h3 class="text-center mt-5 mb-4">Himno CECYTEM</h3>
+      <div class="mx-auto text-center" style="max-width: 500px;">
+        <audio controls class="w-100">
+          <source src="/videos/himno.mp3" type="audio/mpeg" />
+          Tu navegador no soporta el elemento de audio.
+        </audio>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ TESTIMONIOS ============ -->
+  <section id="testimonios" class="py-5 bg-light">
+    <div class="container">
+      <h2 class="text-center mb-5 section-title">Testimonios y Casos de Éxito</h2>
+      <div id="carouselTestimonios" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <div class="text-center p-4">
+              <i class="bi bi-quote display-3 text-primary"></i>
+              <p class="lead mt-3">
+                "Gracias a la formación dual del CECYTEM Aculco, pude obtener mi
+                certificado profesional y al mismo tiempo ingresar a la universidad.
+                Hoy soy ingeniero en sistemas."
+              </p>
+              <h5 class="text-primary">Ing. Esteban Juan</h5>
+              <small class="text-muted">Egresado generación 2018</small>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="text-center p-4">
+              <i class="bi bi-quote display-3 text-primary"></i>
+              <p class="lead mt-3">
+                "La preparatoria dual me dio las herramientas para emprender mi
+                propio negocio en Aculco. Los profesores siempre nos apoyaron."
+              </p>
+              <h5 class="text-primary">Lic. Danna Garcia</h5>
+              <small class="text-muted">Egresada generación 2020</small>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="text-center p-4">
+              <i class="bi bi-quote display-3 text-primary"></i>
+              <p class="lead mt-3">
+                "Como padre de familia, estoy muy orgulloso de la educación que
+                reciben mis hijos en este plantel. Excelente calidad humana."
+              </p>
+              <h5 class="text-primary">Sr. Miguel Angel Ines</h5>
+              <small class="text-muted">Padre de familia</small>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="text-center p-4">
+              <i class="bi bi-quote display-3 text-primary"></i>
+              <p class="lead mt-3">
+                "Como estudiante egresada del Plantel, me enorgullece saber que
+                fui parte de la institución, ya que gracias a los docentes que 
+                me dieron clases, pude entrar a la carrera que actualmente estoy 
+                lic. en Contaduría."
+              </p>
+              <h5 class="text-primary">Lic. Ximena Ines</h5>
+              <small class="text-muted">Egresada generación 2022</small>
+            </div>
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselTestimonios" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon"></span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselTestimonios" data-bs-slide="next">
+          <span class="carousel-control-next-icon"></span>
+        </button>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ FORMULARIO DE CONTACTO ============ -->
+  <section id="contacto" class="py-5">
+    <div class="container">
+      <h2 class="text-center mb-5 section-title">Contáctanos</h2>
+      <div class="row g-4">
+        <div class="col-md-6">
+          <div class="contact-form">
+            <form id="formContacto" action="#" method="POST" enctype="multipart/form-data" novalidate>
+              <div class="mb-3">
+                <label for="nombre" class="form-label">Nombre completo *</label>
+                <input type="text" class="form-control" id="nombre" name="nombre" required minlength="3" maxlength="100" />
+                <div class="invalid-feedback">Ingresa tu nombre (mínimo 3 caracteres).</div>
+              </div>
+              <div class="mb-3">
+                <label for="email" class="form-label">Correo electrónico *</label>
+                <input type="email" class="form-control" id="email" name="email" required />
+                <div class="invalid-feedback">Ingresa un correo válido.</div>
+              </div>
+              <div class="mb-3">
+                <label for="telefono" class="form-label">Teléfono</label>
+                <input type="tel" class="form-control" id="telefono" name="telefono" pattern="[0-9]{10}" />
+                <div class="form-text">Formato: 10 dígitos.</div>
+              </div>
+              <div class="mb-3">
+                <label for="asunto" class="form-label">Asunto *</label>
+                <select class="form-select" id="asunto" name="asunto" required>
+                  <option value="">-- Selecciona --</option>
+                  <option value="inscripciones">Inscripciones</option>
+                  <option value="informacion">Información general</option>
+                  <option value="dual">Programa Dual</option>
+                  <option value="otro">Otro</option>
+                </select>
+              </div>
+              <div class="mb-3">
+                <label for="mensaje" class="form-label">Mensaje *</label>
+                <textarea class="form-control" id="mensaje" name="mensaje" rows="4" required minlength="10"></textarea>
+              </div>
+              <div class="mb-3 form-check">
+                <input type="checkbox" class="form-check-input" id="privacidad" required>
+                <label class="form-check-label" for="privacidad"> 
+                  Acepto el <a href="javascript:void(0)" data-bs-toggle="modal" data-bs-target="#modalPrivacidad">aviso de privacidad</a> *
+                </label>
+                <div class="invalid-feedback">Debes aceptar el aviso de privacidad.</div>
+              </div>
+              <button type="submit" class="btn btn-primary btn-lg">
+                <i class="bi bi-send"></i> Enviar mensaje
+              </button>
+            </form>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="bg-primary text-white p-4 rounded h-100">
+            <h4 class="mb-4">Información de contacto</h4>
+            <p><i class="bi bi-geo-alt-fill"></i> <strong>Dirección:</strong><br />
+              Carretera Aculco - Timilpan Km 2.5, Aculco de Espinoza, Estado de México, C.P. 54600</p>
+            <p><i class="bi bi-telephone-fill"></i> <strong>Teléfono:</strong><br />
+              <a href="tel:+527121067210" class="text-white">(712) 106-7210</a></p>
+            <p><i class="bi bi-envelope-fill"></i> <strong>Correo:</strong><br />
+              <a href="mailto:dir.aculco@cecytem.mx" class="text-white">dir.aculco@cecytem.mx</a></p>
+            <p><i class="bi bi-clock-fill"></i> <strong>Horario:</strong><br />
+              Lunes a Viernes: 7:00 - 17:00 hrs</p>
+
+            <h5 class="mt-4">Ubicación</h5>
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d30090.10!2d-99.8!3d19.8!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2sAculco%20de%20Espinoza!5e0!3m2!1ses!2smx!4v1700000000000"
+              width="100%"
+              height="200"
+              style="border:0; border-radius:8px;"
+              allowfullscreen=""
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+              title="Ubicación CECYTEM Aculco">
+            </iframe>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+  <!-- ============ FOOTER ============ -->
+  <div id="footer"></div>
+
+  <!-- ============ Modal Campaña ============ -->
+  <div class="modal fade" id="modalCampania" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header bg-success text-white">
+          <h5 class="modal-title">🌱 Únete a la campaña</h5>
+          <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"></button>
+        </div>
+        <div class="modal-body">
+          <form id="formCampania" action="https://formsubmit.co/inesjaquelin9072@gmail.com" method="POST">
+            <input type="hidden" name="_captcha" value="false">
+            <input type="hidden" name="_subject" value="🌱 Nuevo registro a la Campaña Ambiental">
+            <input type="hidden" name="_template" value="table">
+
+            <div class="mb-3">
+              <label class="form-label">Nombre completo</label>
+              <input type="text" name="Nombre" class="form-control" required>
+            </div>
+            <div class="mb-3">
+              <label class="form-label">Correo electrónico</label>
+              <input type="email" name="Correo" class="form-control" required>
+            </div>
+            <div class="mb-3">
+               <label class="form-label">
+                 Grupo o semestre
+               </label>
+               <select name="Grupo" class="form-control" required>
+                 <option value="">-- Selecciona tu grupo --</option>
+                 <option value="201">201</option>
+                 <option value="202">202</option>
+                 <option value="203">203</option>
+                 <option value="401">401</option>
+                 <option value="402">402</option>
+                 <option value="403">403</option>
+                 <option value="601">601</option>
+                 <option value="602">602</option>
+                 <option value="603">603</option>
+               </select>
+             </div>
+            <button class="btn btn-success w-100" type="submit">Registrarme</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal Aviso de Privacidad -->
+  <div class="modal fade" id="modalPrivacidad" tabindex="-1" aria-labelledby="modalPrivacidadLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+      <div class="modal-content">
+        <div class="modal-header bg-primary text-white">
+          <h5 class="modal-title" id="modalPrivacidadLabel">Aviso de Privacidad</h5>
+          <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"></button>
+        </div>
+        <div class="modal-body">
+          <p>En <strong>CECYTEM Plantel Aculco</strong> respetamos y protegemos la información personal de nuestros usuarios.</p>
+          <h5>¿Qué información recopilamos?</h5>
+          <ul>
+            <li>Nombre completo.</li>
+            <li>Correo electrónico.</li>
+            <li>Número telefónico.</li>
+            <li>Asunto y mensaje enviado mediante el formulario.</li>
+          </ul>
+          <h5>¿Para qué utilizamos tus datos?</h5>
+          <ul>
+            <li>Responder dudas o solicitudes de información.</li>
+            <li>Brindar atención personalizada.</li>
+            <li>Dar seguimiento a trámites escolares.</li>
+            <li>Mejorar nuestros servicios.</li>
+          </ul>
+          <h5>Protección de la información</h5>
+          <p>Tus datos personales serán tratados de manera confidencial y no serán compartidos con terceros sin tu consentimiento, salvo cuando la ley lo requiera.</p>
+          <h5>Derechos del usuario</h5>
+          <p>Puedes solicitar la actualización, corrección o eliminación de tus datos personales comunicándote al correo oficial del plantel.</p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-success" data-bs-dismiss="modal">Entendido</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ================= CHATBOT ================= -->
+  <button id="chatbotBtn" class="chatbot-btn">
+    <i class="bi bi-chat-dots-fill"></i>
+  </button>
+
+  <div id="chatbotWindow" class="chatbot-window d-none">
+    <div class="chatbot-header">
+      <div class="chatbot-header-info">
+        <div class="chatbot-avatar">🤖</div>
+        <div>
+          <h6>Asistente CECYTEM</h6>
+          <small><span class="estado"></span> En línea</small>
+        </div>
+      </div>
+      <button id="chatbotClose" class="chatbot-close">
+        <i class="bi bi-x-lg"></i>
+      </button>
+    </div>
+
+    <div id="chatbotBody" class="chatbot-body">
+      <div class="bot-msg">
+        👋 ¡Hola!<br><br>
+        Soy el asistente virtual del <strong>CECYTEM Aculco.</strong><br><br>
+        ¿En qué puedo ayudarte?
+      </div>
+    </div>
+
+    <div class="quick-questions">
+      <button class="quick-btn" data-pregunta="inscripciones">📝 Inscripciones</button>
+      <button class="quick-btn" data-pregunta="carreras">🎓 Carreras</button>
+      <button class="quick-btn" data-pregunta="horario">🕒 Horarios</button>
+      <button class="quick-btn" data-pregunta="requisitos">📋 Requisitos</button>
+      <button class="quick-btn" data-pregunta="ubicacion">📍 Ubicación</button>
+      <button class="quick-btn" data-pregunta="contacto">📞 Contacto</button>
+    </div>
+
+    <div class="chatbot-input">
+      <input id="chatInput" type="text" placeholder="Escribe tu pregunta...">
+      <button id="chatSend"><i class="bi bi-send-fill"></i></button>
+    </div>
+  </div>
+
+  <!-- Bootstrap 5 JS Bundle -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <!-- JS personalizado -->
+  <script type="module" src="/src/main.js"></script>
+</body>
+</html>

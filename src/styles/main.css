@@ -1,0 +1,495 @@
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+}
+
+/* ============ VARIABLES Y RESET ============ */
+:root {/* ✅ CORREGIDO: Variable agregada */
+  --color-primary: #0B2E59;      /* Azul marino */
+  --color-secondary: #2E7D32;    /* Verde */
+  --color-light: #F4F6F8;        /* Gris claro */
+  --color-white: #FFFFFF;
+  --color-text: #37474F;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: var(--font-main);
+    scroll-behavior: smooth;
+    padding-top: 70px;
+    background: var(--color-light);
+    color: var(--color-text);
+}
+
+/* ================= NAVBAR ================= */
+.navbar {
+    background: #0B3768;
+}
+
+.navbar-brand,
+.nav-link {
+    color: white !important;
+    transition: .3s;
+}
+
+.nav-link:hover,
+.nav-link.active {
+    color: #A5D6A7 !important;
+}
+
+.navbar-nav {
+    gap: 10px;
+    align-items: center;
+}
+
+.nav-link {
+    padding: 10px 14px !important;
+    border-radius: 8px;
+}
+
+/* ================= DROPDOWN (Unificado y limpio) ================= */
+.dropdown-menu {
+    min-width: 260px;
+    border: none;
+    border-radius: 15px;
+    padding: 8px;
+    margin-top: 10px;
+    box-shadow: 0 10px 25px rgba(0,0,0,.15);
+}
+
+.dropdown-item {
+    border-radius: 8px;
+    padding: 12px 18px;
+    font-weight: 500;
+    transition: all .3s ease;
+}
+
+.dropdown-item:hover {
+    background: var(--color-primary);
+    color: white;
+    padding-left: 25px;
+}
+
+.dropdown-item i {
+    width: 25px;
+}
+
+@media (min-width: 992px) {
+    .navbar .dropdown:hover .dropdown-menu {
+        display: block;
+    }
+}
+
+/* ================= BOOTSTRAP OVERRIDES ================= */
+.bg-primary { background: var(--color-primary) !important; }
+.text-primary { color: var(--color-primary) !important; }
+.bg-light { background: var(--color-light) !important; }
+
+/* ================= BOTONES ================= */
+.btn-primary {
+    background: var(--color-secondary);
+    border-color: var(--color-secondary);
+}
+
+.btn-primary:hover {
+    background: #256A2A;
+    border-color: #256A2A;
+}
+
+.btn-outline-primary {
+    border: 2px solid white;
+    color: white;
+}
+
+.btn-outline-primary:hover {
+    background: white;
+    color: var(--color-primary);
+}
+
+/* ================= TABLAS ================= */
+.table-primary { --bs-table-bg: #EAF4EA; }
+.table thead { background: var(--color-primary); color: white; }
+.table-striped tbody tr:nth-of-type(even) { background: #F4F6F8; }
+
+/* ================= HERO ================= */
+.hero-section {
+    min-height: 90vh;
+    background: linear-gradient(rgba(11,46,89,.82), rgba(46,125,50,.72)), url('/img/galeria-1.jpg') center/cover;
+    color: white;
+}
+
+.hero::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(rgba(11,55,104,.70), rgba(25,135,84,.35));
+}
+
+/* ================= SECCIONES ================= */
+section { padding: 80px 0; }
+
+.section-title {
+    color: var(--color-primary);
+    position: relative;
+    display: inline-block;
+    padding-bottom: 10px;
+    margin-bottom: 2rem !important;
+}
+
+.section-title::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 60px;
+    height: 4px;
+    background: var(--color-secondary);
+    border-radius: 5px;
+}
+
+/* ================= TARJETAS ================= */
+.card, .service-card {
+    background: white;
+    border: none;
+    border-radius: 15px;
+    transition: .3s;
+}
+
+.card:hover, .service-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 30px rgba(11,46,89,.15);
+}
+
+/* ================= GALERÍA ================= */
+.gallery-img {
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+    transition: .3s;
+}
+
+.gallery-img:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 20px rgba(11,46,89,.25);
+}
+
+/* ================= FORMULARIO DE CONTACTO ================= */
+#formContacto {
+    background: white;
+    padding: 25px;
+    border-radius: 15px;
+}
+
+#formContacto .form-control:focus,
+#formContacto .form-select:focus {
+    border-color: var(--color-secondary);
+    box-shadow: 0 0 0 .2rem rgba(46,125,50,.25);
+}
+
+.contact-form {
+    background: #04285e;
+    padding: 35px;
+    border-radius: 20px;
+    box-shadow: 0 10px 25px rgba(0,0,0,.25);
+}
+
+.contact-form label { color: #04396f; font-weight: 600; }
+.contact-form .form-control, .contact-form .form-select {
+    background: #F4F6F9;
+    color: #889cb8;
+    border: 1px solid #D0D7DE;
+    border-radius: 10px;
+}
+.contact-form .form-control:focus, .contact-form .form-select:focus {
+    border-color: #28A745;
+    box-shadow: 0 0 10px rgba(40,167,69,.3);
+}
+.contact-form .form-control::placeholder { color: #7A7A7A; }
+.contact-form .form-text { color: #6c757d; }
+.contact-form .form-check-label { color: white; }
+.contact-form .form-check-input { cursor: pointer; }
+.contact-form .btn-primary {
+    background: #28A745;
+    border: none;
+    padding: 12px 30px;
+    border-radius: 10px;
+    font-weight: bold;
+    transition: .3s;
+}
+.contact-form .btn-primary:hover {
+    background: #218838;
+    transform: translateY(-2px);
+}
+
+/* ================= FOOTER ================= */
+footer { background: var(--color-primary); color: white; }
+footer a { color: white; text-decoration: none; }
+footer a:hover { color: #A5D6A7; }
+
+.footer-wrapper { width: 100%; margin: 0; padding: 0; }
+.footer-wrapper section, .footer-wrapper footer { width: 100%; margin: 0; }
+.footer-wrapper .bg-dark, .footer-wrapper .bg-primary { width: 100%; }
+
+/* ================= LOADER ================= */
+#loader {
+    position: fixed;
+    inset: 0;
+    background: #0f2d57;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    z-index: 99999;
+    transition: opacity .8s ease, visibility .8s ease;
+}
+
+#loader img {
+    width: 120px;
+    margin-bottom: 20px;
+    animation: logo 2s infinite;
+}
+
+#loader h3 { color: white; margin-top: 10px; font-weight: bold; }
+.loader-hidden { opacity: 0; visibility: hidden; }
+
+@keyframes logo {
+    0%, 100% { transform: scale(1); }
+    50% { transform: scale(1.12); }
+}
+
+/* ================= CARRUSEL TESTIMONIOS (Flechas) ================= */
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    width: 55px;
+    height: 55px;
+    background-color: rgba(255,255,255,.25);
+    border-radius: 50%;
+    padding: 15px;
+    background-size: 65%;
+    transition: .3s;
+}
+
+.carousel-control-prev:hover .carousel-control-prev-icon,
+.carousel-control-next:hover .carousel-control-next-icon {
+    background-color: #28a745;
+    transform: scale(1.15);
+}
+
+/* ================= MODALES ================= */
+.modal-content { color: #212529; background: #ffffff; }
+.modal-body { color: #212529; }
+.modal-body p, .modal-body li, .modal-body strong { color: #212529 !important; }
+/* ✅ CORREGIDO: Se eliminó la sobrescritura de .modal que rompía Bootstrap */
+
+.contact-form .form-control,
+.contact-form .form-select {
+    background: #F4F6F9;
+    border: 1px solid #D0D7DE;
+    border-radius: 10px;
+}
+
+/* ================= MISIÓN, VISIÓN, OBJETIVOS ================= */
+.mision-card {
+    border: none;
+    border-radius: 20px;
+    padding: 30px;
+    transition: .4s;
+    box-shadow: 0 8px 25px rgba(0,0,0,.08);
+    background: #fff;
+}
+
+.mision-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 40px rgba(0,0,0,.15);
+}
+
+.icono-mision { font-size: 70px; color: #0d3b75; margin-bottom: 20px; }
+.mision-card h3 { color: #0d3b75; font-weight: 700; margin-bottom: 20px; }
+.mision-card p { text-align: justify; line-height: 1.8; }
+
+.lista-objetivos { text-align: left; padding-left: 20px; }
+.lista-objetivos li { margin-bottom: 12px; line-height: 1.7; }
+
+/* ✅ CORREGIDO: ID cambiado de #titulacion a #titular */
+#titular img { max-height: 420px; object-fit: cover; }
+#titular { background: #fff; }
+#titular .btn { border-radius: 50px; }
+
+/* ================= OFERTA EDUCATIVA (TARJETAS) ================= */
+.carrera-card {
+    border: none;
+    border-radius: 20px;
+    overflow: hidden;
+    background: #fff;
+    box-shadow: 0 12px 30px rgba(0,0,0,.12);
+    transition: all .4s ease;
+}
+
+.carrera-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 20px 45px rgba(0,0,0,.20);
+}
+
+.carrera-card .card-body { padding: 30px; text-align: center; }
+.carrera-card h3 { color: #0F3D73; font-weight: 700; font-size: 2rem; margin-bottom: 15px; }
+.carrera-card p { color: #555; font-size: 1rem; line-height: 1.8; }
+
+@media(max-width: 768px) {
+    .carrera-card h3 { font-size: 1.5rem; }
+}
+
+/* ================= DUAL CARD ================= */
+.dual-card { border-radius: 20px; transition: .3s; }
+.dual-card:hover { transform: translateY(-6px); box-shadow: 0 20px 40px rgba(11,46,89,.15); }
+.dual-icon { font-size: 80px; color: #E53935; }
+
+.btn-outline-cecytem {
+    border: 2px solid var(--color-primary);
+    color: var(--color-primary);
+    background: white;
+    transition: .3s;
+}
+.btn-outline-cecytem:hover { background: var(--color-primary); color: white; }
+
+/* ================= CHATBOT ================= */
+.chatbot-btn {
+    position: fixed;
+    bottom: 25px;
+    right: 25px;
+    width: 70px;
+    height: 70px;
+    border: none;
+    border-radius: 50%;
+    background: linear-gradient(135deg, #0B2E59, #1565C0);
+    color: #fff;
+    font-size: 30px;
+    cursor: pointer;
+    z-index: 9999;
+    transition: .3s;
+    box-shadow: 0 8px 25px rgba(0,0,0,.35);
+}
+
+.chatbot-btn:hover { transform: scale(1.08); box-shadow: 0 12px 35px rgba(0,0,0,.45); }
+
+.chatbot-window {
+    position: fixed;
+    bottom: 100px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 420px;
+    max-width: 95%;
+    height: 450px;
+    background: #fff;
+    border-radius: 20px;
+    box-shadow: 0 15px 40px rgba(0,0,0,.25);
+    overflow: hidden;
+    z-index: 9999;
+    display: flex;
+    flex-direction: column;
+}
+
+@keyframes chatFade {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+.chatbot-header {
+    background: linear-gradient(135deg, #0B2E59, #1565C0);
+    color: white;
+    padding: 16px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.chatbot-header-info { display: flex; align-items: center; gap: 12px; }
+.chatbot-avatar {
+    width: 50px; height: 50px; border-radius: 50%;
+    background: white; display: flex; justify-content: center; align-items: center; font-size: 28px;
+}
+.chatbot-header h6 { margin: 0; font-weight: 700; }
+.chatbot-header small { color: #dfefff; }
+.estado { display: inline-block; width: 10px; height: 10px; border-radius: 50%; background: #00E676; margin-right: 5px; }
+.chatbot-close { border: none; background: none; color: white; font-size: 22px; cursor: pointer; }
+
+.chatbot-body {
+    flex: 1; padding: 18px; overflow-y: auto; background: #EEF5FF; display: flex; flex-direction: column;
+}
+.chatbot-body::-webkit-scrollbar { width: 7px; }
+.chatbot-body::-webkit-scrollbar-thumb { background: #0B2E59; border-radius: 20px; }
+
+.bot-msg {
+    background: white; color: #2C3E50; padding: 12px 16px;
+    border-radius: 18px 18px 18px 5px; margin-bottom: 15px; max-width: 85%;
+    box-shadow: 0 2px 10px rgba(0,0,0,.08); line-height: 1.5; animation: aparece .3s;
+}
+
+.user-msg {
+    background: #1565C0; color: white; padding: 12px 16px;
+    border-radius: 18px 18px 5px 18px; margin-left: auto; margin-bottom: 15px;
+    max-width: 85%; text-align: left; animation: aparece .3s;
+}
+
+@keyframes aparece {
+    from { opacity: 0; transform: translateY(10px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+.quick-questions { padding: 10px; display: flex; flex-wrap: wrap; gap: 8px; border-top: 1px solid #ddd; background: #fff; }
+.quick-btn {
+    border: none; background: #EAF3FF; color: #0B2E59; border-radius: 25px;
+    padding: 8px 14px; font-size: 13px; font-weight: 600; cursor: pointer; transition: .3s;
+}
+.quick-btn:hover { background: #1565C0; color: white; }
+
+.chatbot-input { display: flex; background: white; padding: 15px; border-top: 1px solid #ddd; }
+.chatbot-input input {
+    flex: 1; border: 1px solid #ccc; border-radius: 30px; padding: 12px 18px; outline: none; font-size: 15px;
+}
+.chatbot-input input:focus { border-color: #1565C0; }
+.chatbot-input button {
+    width: 50px; height: 50px; margin-left: 10px; border: none; border-radius: 50%;
+    background: #198754; color: white; font-size: 20px; transition: .3s;
+}
+.chatbot-input button:hover { background: #157347; transform: scale(1.08); }
+
+@media(max-width: 768px) {
+    .chatbot-window { width: 95%; right: 2.5%; left: 2.5%; height: 75vh; bottom: 95px; }
+    .chatbot-btn { width: 65px; height: 65px; }
+}
+
+/* ================= EXTRAS (Convocatorias, Timeline, Alertas) ================= */
+.card-convocatoria { border-radius: 18px; overflow: hidden; transition: .35s; background: #fff; }
+.card-convocatoria:hover { transform: translateY(-8px); box-shadow: 0 18px 40px rgba(0,0,0,.18); }
+.card-convocatoria .card-header { font-size: 1.3rem; font-weight: 700; padding: 18px; }
+.card-convocatoria .card-body { padding: 28px; }
+
+.timeline-item { transition: .3s; }
+.timeline-item:hover { transform: translateX(8px); }
+.timeline-item p { margin: 0; color: #666; }
+
+.badge { font-size: .9rem; padding: 8px 14px; border-radius: 20px; }
+
+.alert-importante {
+    background: linear-gradient(135deg, #fff8e1, #ffffff);
+    border-left: 8px solid #ffc107;
+    border-radius: 18px;
+    padding: 30px;
+    display: flex;
+    align-items: flex-start;
+    gap: 25px;
+    box-shadow: 0 10px 25px rgba(0,0,0,.08);
+    transition: .35s;
+}
+.alert-importante:hover { transform: translateY(-5px); box-shadow: 0 18px 35px rgba(0,0,0,.15); }
+.icono-aviso {
+    width: 70px; height: 70px; background: #ffc107; color: white; border-radius: 50%;
+    display: flex; align-items: center; justify-content: center; font-size: 2rem; flex-shrink: 0;
+}
+.alert-importante h3 { color: #0b3768; font-weight: bold; margin-bottom: 15px; }
+.alert-importante ul { padding-left: 18px; }
+.alert-importante li { margin-bottom: 8px; color: #555; }
